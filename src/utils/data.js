@@ -15,19 +15,8 @@ const courses = [
         lang: "english",
         actual_price: 84.99,
         discounted_price: 9.99,
-        what_you_will_learn: [
-            "Create their own Python Programs",
-            "Become an experienced Python Programmer",
-            "Parse the Web and Create their own Games"
-        ],
         content: [
-            "Up and Running With Python",
-            "The Basics(Data Types)",
-            "Conditions and Loops",
-            "Functions!",
-            "Classes! (Object Oriented Programming)",
-            "File Input/Output",
-            "Using Python Modules"
+            
         ]
     },
     {
@@ -44,12 +33,6 @@ const courses = [
         lang: "english",
         actual_price: 84.99,
         discounted_price: 9.99,
-        what_you_will_learn: [
-            "Have an intermediate skill level of Python programming.",
-            "Use the numpy library to create and manipulate arrays.",
-            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
-            "Have a portfolio of various data analysis projects."
-        ],
         content: [
             "Intro to Course and Python",
             "Learning Numpy",
@@ -74,10 +57,6 @@ const courses = [
         lang: "english",
         actual_price: 84.99,
         discounted_price: 9.99,
-        what_you_will_learn: [
-            "To learn the python language",
-            "To learn the CORE skills to understand any programming language",
-        ],
         content: [
             "Programming fundamentals",
             "Getting Started with Python",
@@ -101,12 +80,6 @@ const courses = [
         lang: "english",
         actual_price: 29.99,
         discounted_price: 9.99,
-        what_you_will_learn: [
-            "Create fully functional Python programs",
-            "Learn about loop structures and conditionals",
-            "Work with Python file handling",
-            "Manipulate strings and data"
-        ],
         content: [
             "Getting Started",
             "The Basics",
@@ -130,12 +103,6 @@ const courses = [
         lang: "english",
         actual_price: 49.99,
         discounted_price: 10.99,
-        what_you_will_learn: [
-            "Design Reusable Object-Oriented Python Classes",
-            "How to handle Errors",
-            "Work with Python file handling",
-            "Apply OOP Concepts to handle complexity"
-        ],
         content: [
             "Introduction to Object Oriented Python",
             "Classes",
@@ -160,13 +127,6 @@ const courses = [
         lang: "english",
         actual_price: 84.99,
         discounted_price: 9.99,
-        what_you_will_learn: [
-            "Prepare for Industry Certification Exam",
-            "Hours and Hours of Video Instruction",
-            "Over 25 Engaging Lab Exercises",
-            "Instructor Available by Email or on the Forums",
-            "Comprehensive Coverage of HTML and CSS"
-        ],
         content: [
             "Your Develpment Toolbox",
             "Certified HTML5 Specialist 2019",
@@ -194,14 +154,6 @@ const courses = [
         lang: "english",
         actual_price: 72.99,
         discounted_price: 14.99,
-        what_you_will_learn: [
-            "Learn Python from beginner to advanced",
-            "Lots of projects, big and small!",
-            "Learn PHP for server code execution",
-            "Build a Login/Registration/Members-only website, just like Facebook",
-            "Learn the LAMP Stack: Linux, Apache, PHP and MySQL",
-            "Learn HTML5, CSS3, Vanilla JS (ES6+), Python, Wagtail CMS, PHP and MySQL all from scratch"
-        ],
         content: [
             "The Ultimate HTML Developer: Introduction",
             "Getting Started",
@@ -236,16 +188,6 @@ const courses = [
         lang: "english",
         actual_price: 19.99,
         discounted_price: 8.99,
-        what_you_will_learn: [
-            "Understand the technologies used in web development",
-            "Apply HTML document structure",
-            "Add images to a web page",
-            "Understand the HTML/CSS color model",
-            "Alter CSS text properties",
-            "Know the role of Javascript programming in web development",
-            "Create a basic Javascript program to collect data",
-            "Understand the next steps to learning professional web development skills"
-        ],
         content: [
             "Tools and HTML",
             "CSS",
@@ -267,16 +209,6 @@ const courses = [
         lang: "english",
         actual_price: 70.99,
         discounted_price: 14.99,
-        what_you_will_learn: [
-            "Understand how development stacks work and pick which stack is ideal for you",
-            "Decide between hiring in-house employees or contractors for your business",
-            "Choose a winning combination of traits that you want your business to convey",
-            "Find cheap and professional ways of creating an online presence",
-            "Master the biggest platforms for contracting: Freelancer and Upwork",
-            "Create and organize a professional and effective portfolio",
-            "Utilize 15 different strategies to attract potential clients",
-            "Use tools like Proposify and Nusii to create and streamline proposals"
-        ],
         content: [
             "Introduction",
             "The Essentials",
@@ -304,16 +236,6 @@ const courses = [
         lang: "english",
         actual_price: 50.99,
         discounted_price: 11.99,
-        what_you_will_learn: [
-            "Build 23+ custom web design & development projects by hand",
-            "Plan, design and code your very own self-directed website project from scratch to launch!",
-            "Code websites & applications with HTML5 & CSS3",
-            "Comfortably use Adobe Photoshop for photo manipulation, graphics creation & design",
-            "Design a professional and modern business card in Adobe Photoshop",
-            "Learn visual design fundamentals for beginners",
-            "Learn how to choose the correct font combinations for your projects",
-            "Design, build and manage custom database-driven websites with MySQL"
-        ],
         content: [
             "Hey! Welcome to the course!",
             "Introduction to Visual Design for Web Designers & Web Developers",
@@ -341,16 +263,6 @@ const courses = [
         lang: "english",
         actual_price: 77.99,
         discounted_price: 16.99,
-        what_you_will_learn: [
-            "Successfully perform all steps in a complex Data Science project",
-            "Perform Data Mining in Tableau",
-            "Apply Ordinary Least Squares method to Create Linear Regressions",
-            "Assess the Adjusted R-Squared for all types of models",
-            "Create a Multiple Linear Regression (MLR)",
-            "Interpret coefficients of an MLR",
-            "Use Backward Elimination, Forward Selection, and Bidirectional Elimination methods to create statistical models",
-            "Read a Confusion Matrix"
-        ],
         content: [
             "What is Data Science?",
             "Part 1: Visualisation",
@@ -376,14 +288,6 @@ const courses = [
         lang: ["english", "french"],
         actual_price: 87.99,
         discounted_price: 14.99,
-        what_you_will_learn: [
-            "Build artificial neural networks with Tensorflow and Keras",
-            "Classify images, data, and sentiments using deep learning",
-            "Data Visualization with MatPlotLib and Seaborn",
-            "Classify data using K-Means clustering, Support Vector Machines (SVM), KNN, Decision Trees, Naive Bayes, and PCA",
-            "Build a movie recommender system using item-based and user-based collaborative filtering",
-            "Interpret coefficients of an MLR",
-        ],
         content: [
             "Statistics and Probability Refresher, and Python Practice",
             "Predictive Models",
@@ -409,13 +313,6 @@ const courses = [
         lang: ["english", "Portuguese"],
         actual_price: 90.99,
         discounted_price: 19.99,
-        what_you_will_learn: [
-            "Learn how Deep Learning REALLY works (not just some diagrams and magical black box code)",
-            "Code a neural network from scratch in Python and numpy",
-            "Describe different types of neural networks and the different types of problems they are used for",
-            "Create a neural network with an output that has K > 2 classes using softmax",
-            "Install TensorFlow",
-        ],
         content: [
             "Preliminaries: From Neurons to Neural Networks",
             "Training a neural network",
@@ -440,14 +337,6 @@ const courses = [
         lang: "english",
         actual_price: 45.99,
         discounted_price: 6.99,
-        what_you_will_learn: [
-            "Learn to program in R at a good level",
-            "Learn the core principles of programming",
-            "Learn how to create variables",
-            "Learn how to create a while() loop and a for() loop in R",
-            "Learn the matrix() function, learn rbind() and cbind()",
-            "Learn how to customize R studio to suit your preferences"
-        ],
         content: [
             "Hit The Ground Running",
             "Core Programming Principles",
@@ -472,15 +361,6 @@ const courses = [
         lang: ["english", "arabic"],
         actual_price: 77.99,
         discounted_price: 16.99,
-        what_you_will_learn: [
-            "Program in R",
-            "Create Data Visualizations",
-            "Use R to manipulate data easily",
-            "Use R for Data Science",
-            "Use R for Data Analysis",
-            "Use R to handle csv,excel,SQL files or web scraping",
-            "Use R for Machine Learning Algorithms"
-        ],
         content: [
             "Course Best Practices",
             "Windows Installation Set-Up",
@@ -505,12 +385,6 @@ const courses = [
         lang: ["english", "arabic"],
         actual_price: 69.99,
         discounted_price: 11.99,
-        what_you_will_learn: [
-            "You will be fully prepared for the",
-            "AWS Certified Solutions Architect",
-            "Associate, AWS Certified Developer",
-            "Associate and AWS Certified SysOps ...",
-        ],
         content: [
             "AWS Cerified Cloud Practitioner",
             "AWS Certified Associate Core Knowledge",
@@ -533,12 +407,6 @@ const courses = [
         lang: ["english", "french"],
         actual_price: 34.99,
         discounted_price: 10.99,
-        what_you_will_learn: [
-            "Will be prepared to give AWS Certified Security Specialty Exam",
-            "Gain deep insights about Enterprise grade Security implementation.",
-            "You will be able to Master the Security aspect of AWS",
-            "Will be able to detect attacks and protect the AWS infrastructure from Hackers.",
-        ],
         content: [
             "Getting started with the course",
             "Domain 1 - Incident Response",
@@ -562,13 +430,6 @@ const courses = [
         lang: "english",
         actual_price: 71.99,
         discounted_price: 15.99,
-        what_you_will_learn: [
-            "Breadth of understanding of various AWS services",
-            "How to Integrate Services into a Complete Solution",
-            "Hands-on Scenario Based Learning",
-            "Weekly Study Group Discussion Sessions",
-            "Concise and Precise Preparation for AWS Solutions Architect Certification"
-        ],
         content: [
             "Housekeeping",
             "Infrastructure, Pricing, Support - Review",
@@ -592,14 +453,6 @@ const courses = [
         lang: ["english", "spanish"],
         actual_price: 13.99,
         discounted_price: 5.99,
-        what_you_will_learn: [
-            "What Photoshop is & how to get into it!",
-            "Customize the programs layout & feel comfortable",
-            "Understand layers & it's panels",
-            "Understand adjustment layers how to use them",
-            "Understand setting color profiles, save PSD files & web files",
-            "Understand cutting objects out, fixing skin & manipulation"
-        ],
         content: [
             "Photoshop Interface & Workspace - For Beginners",
             "Important Photoshop Tools - For Beginners",
@@ -623,13 +476,6 @@ const courses = [
         lang: ["english", "italian"],
         actual_price: 79.99,
         discounted_price: 16.99,
-        what_you_will_learn: [
-            "Bake UX into your workflow by following a proven, user centred design framework.",
-            "Moderate a usability test and prioritise the observations.",
-            "Uncover and describe users’ mental models.",
-            "Design and conduct online and offline card sorting sessions.",
-            "Develop cheap, throwaway prototypes to get quick and frequent feedback from your users."
-        ],
         content: [
             "Going where the action is: Understading users in context",
             "How to get niche quick",
@@ -654,12 +500,6 @@ const courses = [
         lang: "english",
         actual_price: 88.99,
         discounted_price: 16.99,
-        what_you_will_learn: [
-            "Part one – everything you need for a fast-track start, including your first article",
-            "Part three – the essential skills that mark out a real pro",
-            "Part two – the copywriter’s ‘how to’: sales copy, expert copy, and more!",
-            "Part four – how to boost your income and turn your new website into a money magnet",
-        ],
         content: [
             "Choose projects whre you feel comfortable",
             "Back to basics II",
@@ -683,13 +523,6 @@ const courses = [
         lang: "english",
         actual_price: 40.99,
         discounted_price: 10.99,
-        what_you_will_learn: [
-            "Identify who your Ideal Clients are so you know exactly who to market and sell to",
-            "Learn how to create a Signature Program so you can stop selling your time or creating spec proposals",
-            "Learn how to write Compelling Marketing Copy you can use to attract your ideal clients",
-            "Learn how to create a Financially Viable Business and understand exactly what it will take to reach your financial goals",
-            "Learn how to easily create your own Wordpress Coaching or Consulting Website"
-        ],
         content: [
             "Building Your Business & Marketing Foundation",
             "Packaging Your Services",

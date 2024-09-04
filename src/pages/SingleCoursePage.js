@@ -1,32 +1,53 @@
-import React, {useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from "styled-components";
 import { useCoursesContext } from '../context/courses_context';
 import StarRating from '../components/StarRating';
-import {MdInfo} from "react-icons/md";
-import {TbWorld} from "react-icons/tb";
-import {FaShoppingCart} from "react-icons/fa";
-import {RiClosedCaptioningFill} from "react-icons/ri";
-import {BiCheck} from "react-icons/bi";
-import {Link} from "react-router-dom";
+import { MdInfo } from "react-icons/md";
+import { TbWorld } from "react-icons/tb";
+import { FaShoppingCart } from "react-icons/fa";
+import { RiClosedCaptioningFill } from "react-icons/ri";
+import { BiCheck } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import { useCartContext } from '../context/cart_context';
 
+import axios from 'axios';  // Import axios
+
+
+
 const SingleCoursePage = () => {
-  const {id} = useParams();
-  const {fetchSingleCourse, single_course} = useCoursesContext();
-  const {addToCart} = useCartContext();
+  const { id } = useParams();
+  const { fetchSingleCourse, single_course } = useCoursesContext();
+  const { addToCart } = useCartContext();
 
   useEffect(() => {
     fetchSingleCourse(id);
+
   }, []);
 
-  const {id: courseID, category, image, course_name, description, rating_count, rating_star, students, creator, updated_date, lang, actual_price, discounted_price, what_you_will_learn: learnItems, content} = single_course;
+  const [reviews, setReviews] = useState([]); // State for storing reviews
+  const { id: courseID, category, image, course_name, description, rating_count, rating_star, students, creator, updated_date, lang, actual_price, discounted_price, content } = single_course;
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const response = await axios.get('http://localhost:8100/reviews');
+        setReviews(response.data); // Store fetched reviews in state
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      }
+    };
+
+    fetchReviews();
+  }, []);
+
+
 
   return (
     <SingleCourseWrapper>
       <div className='course-intro mx-auto grid'>
         <div className='course-img'>
-          <img src = {image} alt = {course_name} />
+          <img src={image} alt={course_name} />
         </div>
         <div className='course-details'>
           <div className='course-category bg-white text-dark text-capitalize fw-6 fs-12 d-inline-block'>{category}</div>
@@ -69,7 +90,7 @@ const SingleCoursePage = () => {
           </div>
 
           <div className='course-btn'>
-            <Link to = "/cart" className='add-to-cart-btn d-inline-block fw-7 bg-purple' onClick={() => addToCart(courseID, image, course_name, creator, discounted_price, category)}>
+            <Link to="/cart" className='add-to-cart-btn d-inline-block fw-7 bg-purple' onClick={() => addToCart(courseID, image, course_name, creator, discounted_price, category)}>
               <FaShoppingCart /> Add to cart
             </Link>
           </div>
@@ -77,33 +98,25 @@ const SingleCoursePage = () => {
       </div>
 
       <div className='course-full bg-white text-dark'>
-        <div className='course-learn mx-auto'>
-          <div className='course-sc-title'>What you'll learn</div>
-          <ul className='course-learn-list grid'>
-            {
-              learnItems && learnItems.map((learnItem, idx) => {
-                return (
-                  <li key = {idx}>
-                    <span><BiCheck /></span>
-                    <span className='fs-14 fw-5 opacity-09'>{learnItem}</span>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </div>
 
         <div className='course-content mx-auto'>
-          <div className='course-sc-title'>Course content</div>
+          <div className='course-sc-title'>Reviews</div>
           <ul className='course-content-list'>
             {
-              content && content.map((contentItem, idx) => {
-                return (
-                  <li key = {idx}>
-                    <span>{contentItem}</span>
+              reviews.length > 0 ? (
+                reviews.map((review, idx) => (
+                  <li key={idx}>
+                    <div>
+                      <span>Customer: {review.customer.name}</span><br />
+                      <span>Book: {review.book.name}</span><br />
+                      <span>Date: {review.reviewDate}</span><br />
+                      <span>Comment: {review.comment}</span><br />
+                    </div>
                   </li>
-                )
-              })
+                ))
+              ) : (
+                <li>No reviews available</li>
+              )
             }
           </ul>
         </div>
